@@ -1,0 +1,43 @@
+{
+    "title": "pump_pools",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "name": {
+            "type": "string"
+        },
+        "symbol": {
+            "type": "string"
+        },
+        "target_amount": {
+            "type": "number"
+        },
+        "current_amount": {
+            "type": "number",
+            "default": 0
+        },
+        "participants_count": {
+            "type": "integer",
+            "default": 0
+        },
+        "launch_time": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "default": "collecting"
+        },
+        "expected_profit_pct": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "symbol",
+        "target_amount",
+        "launch_time",
+        "expected_profit_pct"
+    ]
+}

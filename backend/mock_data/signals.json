@@ -1,0 +1,62 @@
+[
+    {
+        "symbol": "BTC/USDT",
+        "direction": "long",
+        "entry_price": 67250.5,
+        "take_profit": 69500.0,
+        "stop_loss": 66000.0,
+        "confidence": 87.5,
+        "signal_type": "whale_accumulation",
+        "status": "active",
+        "volume_spike": 340.5,
+        "whale_activity": true
+    },
+    {
+        "symbol": "ETH/USDT",
+        "direction": "long",
+        "entry_price": 3485.2,
+        "take_profit": 3650.0,
+        "stop_loss": 3380.0,
+        "confidence": 82.3,
+        "signal_type": "volume_spike",
+        "status": "active",
+        "volume_spike": 520.8,
+        "whale_activity": false
+    },
+    {
+        "symbol": "SOL/USDT",
+        "direction": "short",
+        "entry_price": 178.45,
+        "take_profit": 165.0,
+        "stop_loss": 185.0,
+        "confidence": 75.0,
+        "signal_type": "resistance_rejection",
+        "status": "active",
+        "volume_spike": 180.2,
+        "whale_activity": true
+    },
+    {
+        "symbol": "DOGE/USDT",
+        "direction": "long",
+        "entry_price": 0.1245,
+        "take_profit": 0.145,
+        "stop_loss": 0.115,
+        "confidence": 68.9,
+        "signal_type": "social_hype",
+        "status": "completed",
+        "volume_spike": 890.0,
+        "whale_activity": false
+    },
+    {
+        "symbol": "XRP/USDT",
+        "direction": "long",
+        "entry_price": 0.582,
+        "take_profit": 0.62,
+        "stop_loss": 0.56,
+        "confidence": 79.4,
+        "signal_type": "whale_accumulation",
+        "status": "active",
+        "volume_spike": 245.3,
+        "whale_activity": true
+    }
+]

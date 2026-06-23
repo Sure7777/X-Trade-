@@ -1,0 +1,43 @@
+{
+    "title": "wallets",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "user_id": {
+            "type": "string"
+        },
+        "available_balance": {
+            "type": "number",
+            "default": 0
+        },
+        "trading_balance": {
+            "type": "number",
+            "default": 0
+        },
+        "profit_balance": {
+            "type": "number",
+            "default": 0
+        },
+        "vault_balance": {
+            "type": "number",
+            "default": 0
+        },
+        "total_profit": {
+            "type": "number",
+            "default": 0
+        },
+        "total_loss": {
+            "type": "number",
+            "default": 0
+        },
+        "is_paper_trading": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+    "required": [
+        "user_id"
+    ]
+}

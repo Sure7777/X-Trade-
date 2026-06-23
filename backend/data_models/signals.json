@@ -1,0 +1,50 @@
+{
+    "title": "signals",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "symbol": {
+            "type": "string"
+        },
+        "direction": {
+            "type": "string"
+        },
+        "entry_price": {
+            "type": "number"
+        },
+        "take_profit": {
+            "type": "number"
+        },
+        "stop_loss": {
+            "type": "number"
+        },
+        "confidence": {
+            "type": "number"
+        },
+        "signal_type": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "default": "active"
+        },
+        "volume_spike": {
+            "type": "number"
+        },
+        "whale_activity": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "required": [
+        "symbol",
+        "direction",
+        "entry_price",
+        "take_profit",
+        "stop_loss",
+        "confidence",
+        "signal_type"
+    ]
+}

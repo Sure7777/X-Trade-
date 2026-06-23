@@ -1,0 +1,61 @@
+{
+    "title": "trades",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "user_id": {
+            "type": "string"
+        },
+        "symbol": {
+            "type": "string"
+        },
+        "side": {
+            "type": "string"
+        },
+        "order_type": {
+            "type": "string"
+        },
+        "quantity": {
+            "type": "number"
+        },
+        "price": {
+            "type": "number"
+        },
+        "leverage": {
+            "type": "integer",
+            "default": 1
+        },
+        "take_profit": {
+            "type": "number"
+        },
+        "stop_loss": {
+            "type": "number"
+        },
+        "status": {
+            "type": "string",
+            "default": "open"
+        },
+        "pnl": {
+            "type": "number",
+            "default": 0
+        },
+        "is_paper": {
+            "type": "boolean",
+            "default": false
+        },
+        "is_auto": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "required": [
+        "user_id",
+        "symbol",
+        "side",
+        "order_type",
+        "quantity",
+        "price"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "title": "transactions",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "user_id": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "amount": {
+            "type": "number"
+        },
+        "currency": {
+            "type": "string",
+            "default": "USDT"
+        },
+        "status": {
+            "type": "string",
+            "default": "completed"
+        },
+        "description": {
+            "type": "string"
+        },
+        "reference_id": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "user_id",
+        "type",
+        "amount"
+    ]
+}

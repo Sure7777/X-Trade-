@@ -1,0 +1,32 @@
+[
+    {
+        "name": "صندوق البيتكوين الذهبي",
+        "symbol": "BTC/USDT",
+        "target_amount": 50000,
+        "current_amount": 38500,
+        "participants_count": 127,
+        "launch_time": "2026-06-25T14:00:00Z",
+        "status": "collecting",
+        "expected_profit_pct": 15.5
+    },
+    {
+        "name": "صندوق الإيثريوم الفضي",
+        "symbol": "ETH/USDT",
+        "target_amount": 25000,
+        "current_amount": 22100,
+        "participants_count": 89,
+        "launch_time": "2026-06-23T18:00:00Z",
+        "status": "collecting",
+        "expected_profit_pct": 22.0
+    },
+    {
+        "name": "صندوق سولانا السريع",
+        "symbol": "SOL/USDT",
+        "target_amount": 15000,
+        "current_amount": 15000,
+        "participants_count": 56,
+        "launch_time": "2026-06-22T20:00:00Z",
+        "status": "launched",
+        "expected_profit_pct": 35.0
+    }
+]
