@@ -117,13 +117,16 @@ def get_backend_app():
             # Import the FastAPI app
             import sys
 
-            sys.path.append("/var/task/backend")
+            if "/var/task/backend" not in sys.path:
+                sys.path.append("/var/task/backend")
             # Check if main.py exists
             main_py_path = "/var/task/backend/main.py"
             if not os.path.exists(main_py_path):
-                logger.error("/var/task/backend/main.py not found")
+                logger.warning("/var/task/backend/main.py not found, trying import anyway")
 
-            from main import app as backend_app
+            import main as main_module
+            backend_app = main_module.app
+            logger.info("Backend app imported successfully, routes count: %d", len(backend_app.routes))
         except Exception as e:
             logger.error(f"Failed to import backend app: {e}\n{format_traceback()}")
             raise
